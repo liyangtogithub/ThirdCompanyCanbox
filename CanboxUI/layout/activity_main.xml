@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:landsem="http://schemas.android.com/apk/res/com.landsem.canboxui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.landsem.canboxui.view.InstantOilItemView
+            android:id="@+id/oilStateWIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.landsem.canboxui.view.InstantOilItemView
+            android:id="@+id/instantOilItemView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <com.landsem.canboxui.view.InstantOilItemView
+            android:id="@+id/averageOilItemView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.landsem.canboxui.view.MilesItemView
+            android:id="@+id/milesItemView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+    <com.landsem.canboxui.view.InstantOilItemView
+            android:id="@+id/instantSpeedItemView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+    <com.landsem.canboxui.view.InstantOilItemView
+            android:id="@+id/engineSpeedItemView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+        
+        <com.landsem.canboxui.view.InstantOilItemView
+            android:id="@+id/batteryStateWIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+        
+         <com.landsem.canboxui.view.WaterTankTempItemView
+            android:id="@+id/waterTankTempItemView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            landsem:canboxItemTitle="@string/outSideTemp" />
+    </LinearLayout>
+
+</LinearLayout>

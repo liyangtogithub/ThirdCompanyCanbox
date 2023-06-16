@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/air_padding_top"
+    android:paddingLeft="@dimen/air_padding_left"
+    android:paddingRight="@dimen/air_padding_left"
+    android:paddingTop="@dimen/air_padding_top" >
+
+   <include
+       layout="@layout/air_layout1"
+       />
+    <include
+       layout="@layout/air_layout2"
+       />
+     <include
+       layout="@layout/air_layout3"
+       />
+   
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/airLeftTemp_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/air_bottom_bg"
+            android:gravity="center"
+            android:text="@string/airFrontLeftTemp"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/airButtonTextSize" />
+         <TextView
+            android:id="@+id/airACEnable_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/air_bottom_bg"
+            android:gravity="center"
+            android:text="@string/airACDisable"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/airButtonTextSize" />
+          <TextView
+            android:id="@+id/airEnable_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/air_bottom_bg"
+            android:gravity="center"
+            android:text="@string/disable"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/airButtonTextSize" />
+           <TextView
+            android:id="@+id/airAUTOEnable_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/air_bottom_bg"
+            android:gravity="center"
+            android:text="@string/airAUTODisable"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/airButtonTextSize" />
+            <TextView
+            android:id="@+id/airRightTemp_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/air_bottom_bg"
+            android:gravity="center"
+            android:text="@string/airFrontRightTemp"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/airButtonTextSize" />
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

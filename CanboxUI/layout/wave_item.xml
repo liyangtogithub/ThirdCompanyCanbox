@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.landsem.canboxui.view.WaveView
+        android:id="@+id/waveItem_WaveDrawablerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/waveItem_WaveDrawablerView"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/waveItem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleTextSize" />
+
+        <com.landsem.canboxui.view.ColorTextView
+            android:id="@+id/waveItem_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/valueBigTextSize" />
+    </LinearLayout>
+
+</merge>

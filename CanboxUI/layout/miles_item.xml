@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/milesItem_iconIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/miles_low"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/milesItem_iconIV"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/drivedMiles"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleTextSize" />
+
+        <com.landsem.canboxui.view.ColorTextView
+            android:id="@+id/milesItem_milesCTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/nonSupport"
+            android:textSize="@dimen/valueSmallTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/drivableMiles"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleTextSize" />
+
+        <com.landsem.canboxui.view.ColorTextView
+            android:id="@+id/milesItem_drivableMilesCTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/nonSupport"
+            android:textSize="@dimen/valueSmallTextSize" />
+    </LinearLayout>
+
+</merge>

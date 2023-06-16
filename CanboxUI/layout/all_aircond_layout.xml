@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aircondview"
+    android:layout_width="600dp"
+    android:layout_height="320dp" 
+    android:background="@drawable/aircond_bg"
+    >
+    
+    <ImageView
+	    android:id="@+id/air_front_demist"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/air_front_demist" 
+	    android:layout_marginLeft="193dp"
+	    android:layout_marginTop="30dp"
+	/>
+    
+    <ImageView
+	    android:id="@+id/air_flow_window"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/air_flow_window" 
+	    android:layout_marginLeft="250dp"
+	    android:layout_marginTop="30dp"
+	/>
+    
+     <ImageView
+	    android:id="@+id/air_back_demist"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/air_back_demist" 
+	    android:layout_marginLeft="307dp"
+	    android:layout_marginTop="30dp"
+	/>
+    
+	<ImageView
+	    android:id="@+id/airmeter"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/airmeter_1" 
+	    android:layout_marginLeft="205dp"
+	    android:layout_marginTop="110dp"
+	/>
+	
+	<TextView
+	    android:id="@+id/air_acmax"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/air_ac_max" 
+	    android:layout_marginLeft="130dp"
+	    android:layout_marginTop="205dp"
+	    android:gravity="center"
+	    android:textColor="@color/white"
+	    android:text="A/C MAX"
+	    android:textSize="12dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_arrowup"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/arrows_up" 
+	    android:layout_marginLeft="255dp"
+	    android:layout_marginTop="100dp"
+	/>
+	
+	<ImageView
+	    android:id="@+id/airc_arrowmid"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/arrows_mid" 
+	    android:layout_marginLeft="265dp"
+	    android:layout_marginTop="145dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_arrowdown"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/arrows_down" 
+	    android:layout_marginLeft="255dp"
+	    android:layout_marginTop="180dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_ac"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/airc_ac_off" 
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="265dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_auto"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/airc_auto_off" 
+	    android:layout_marginLeft="125dp"
+	    android:layout_marginTop="265dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_dual"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/airc_dual_on" 
+	    android:layout_marginLeft="230dp"
+	    android:layout_marginTop="265dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_outloop"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/outsideloop_off" 
+	    android:layout_marginLeft="345dp"
+	    android:layout_marginTop="260dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_inloop"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/innerloop_off" 
+	    android:layout_marginLeft="460dp"
+	    android:layout_marginTop="265dp"
+	/>
+
+	<TextView 
+	    android:id="@+id/airc_templeft"
+	    android:layout_width="65dp"
+	    android:layout_height="wrap_content"
+	    android:textSize="30dp"
+	    android:text="16"
+	    android:gravity="center"
+	    android:textColor="#ffffffff"
+	    android:layout_marginLeft="32dp"
+	    android:layout_marginTop="180dp"
+	/>
+
+	<TextView
+	    android:id="@+id/airc_tempright"
+	    android:layout_width="65dp"
+	    android:layout_height="wrap_content"
+	    android:text="16"
+	    android:textSize="30dp"
+	    android:gravity="center"
+	    android:textColor="#ffffffff"
+	    android:layout_marginLeft="500dp"
+	    android:layout_marginTop="180dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_hotmleft1"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/hotmleft_1" 
+	    android:layout_marginLeft="85dp"
+	    android:layout_marginTop="55dp"
+	/>
+
+	<ImageView
+	    android:id="@+id/airc_hotmright1"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/hotmright_1" 
+	    android:layout_marginLeft="475dp"
+	    android:layout_marginTop="55dp"
+	/>
+
+	<!-- <TextView
+	    android:id="@+id/airc_txtmeter"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/airc_dual"
+	    android:layout_alignTop="@+id/airc_arrowmid"
+	    android:text="01"
+	    android:textColor="#ffffffff"
+	    android:textSize="20dp"
+	/> -->
+
+</RelativeLayout>

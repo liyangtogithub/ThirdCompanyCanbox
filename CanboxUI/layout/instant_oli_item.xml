@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/instantOilItem_iconIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/instantOilItem_iconIV"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_oilCTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/instantOil"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleTextSize" />
+        
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.landsem.canboxui.view.ColorTextView
+            android:id="@+id/instantOilItem_oilCTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/valueBigTextSize" />
+         <com.landsem.canboxui.view.ColorTextView
+            android:id="@+id/unit_oilCTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/nonSupport"
+            android:textSize="@dimen/valueSmallTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>
